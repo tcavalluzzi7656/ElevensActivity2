@@ -33,7 +33,12 @@ public class Deck {
      * @param values is an array containing all of the card point values.
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        this.size=ranks.length*suits.length;
+        for(int i=0;i<suits.length;i++) {
+            for (int x = 0; x < ranks.length; x++) {
+                Card card1 = new Card()
+            }
+        }
     }
 
 
