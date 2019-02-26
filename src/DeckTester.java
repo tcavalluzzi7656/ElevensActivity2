@@ -8,7 +8,24 @@ public class DeckTester {
      *	@param args is not used.
      */
     public static void main(String[] args) {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        String[] ranks = {"ace", "5", "8"};
+        String[] suits = {"diamonds", "spades", "clubs"};
+        int[] pointValues = {1, 5, 8};
+        Deck d = new Deck(ranks, suits, pointValues);
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+        System.out.println(d.deal());
+
     }
 }
 

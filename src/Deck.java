@@ -34,11 +34,11 @@ public class Deck {
      */
     public Deck(String[] ranks, String[] suits, int[] values) {
 
-        cards= new ArrayList<Card>();
-        int y=0;
+        cards= new ArrayList<>();
+
         for(int i=0;i<suits.length;i++) {
             for (int x = 0; x < ranks.length; x++) {
-                Card temp = new Card(ranks[i],suits[x],values[i]);
+                Card temp = new Card(ranks[x],suits[i],values[x]);
               cards.add(temp);
             }
         }
