@@ -42,6 +42,7 @@ public class Deck {
               cards.add(temp);
             }
         }
+        size = cards.size();
     }
 
 
@@ -50,7 +51,12 @@ public class Deck {
      * @return true if this deck is empty, false otherwise.
      */
     public boolean isEmpty() {
-		if(Deck.size())
+		if(this.size()==0){
+            return true;
+        }
+        return false;
+
+
     }
 
     /**
@@ -58,7 +64,7 @@ public class Deck {
      * @return the number of undealt cards in this deck.
      */
     public int size() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+		return this.size();
     }
 
     /**
@@ -75,7 +81,14 @@ public class Deck {
      *         previously dealt.
      */
     public Card deal() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
+        size--;
+        if(size>=0){
+            return cards.get(size);
+        }
+        else
+        {
+            return null;
+        }
     }
 
     /**
